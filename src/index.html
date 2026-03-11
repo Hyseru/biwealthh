@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIWealth | Sua Corretora Digital</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Phosphor Icons (Modern & Clean) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+
+<body>
+    <!-- Background animated blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header class="glass-nav">
+        <nav>
+            <div class="logo">
+                <i class="ph-fill ph-hexagon"></i>
+                BI<span class="gradient-text">Wealth</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#mercado" class="active">Mercado</a></li>
+                <li><a href="#carteira">Carteira</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <button class="btn-primary">Começar Agora</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="badge">🚀 O futuro das finanças</div>
+            <h1>Invista no futuro do <br><span class="gradient-text">Dinheiro Digital</span></h1>
+            <p>Compre, venda e armazene centenas de criptomoedas com taxas zero e segurança de ponta. Junte-se à
+                revolução financeira hoje com uma experiência premium.</p>
+            <div class="cta-group">
+                <div class="input-wrapper">
+                    <i class="ph ph-envelope"></i>
+                    <input type="email" placeholder="Seu melhor e-mail">
+                </div>
+                <button class="btn-primary">Criar Conta</button>
+            </div>
+        </section>
+
+        <section class="market-view" id="mercado">
+            <div class="market-header">
+                <h3>Preços em Tempo Real</h3>
+                <button class="btn-icon" id="refresh-btn" title="Atualizar dados">
+                    <i class="ph ph-arrows-clockwise"></i>
+                </button>
+            </div>
+
+            <div class="table-container glass-card">
+                <table id="crypto-table">
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Preço</th>
+                            <th>Variação (24h)</th>
+                            <th class="desktop-only">Market Cap</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="market-data">
+                        <!-- Skeletons & Data will be injected here via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stat-item">
+                <h2 class="gradient-text">+$50B</h2>
+                <p>Volume Negociado</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="gradient-text">+10M</h2>
+                <p>Usuários Globais</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="gradient-text">150+</h2>
+                <p>Países Atendidos</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="gradient-text"><i class="ph-fill ph-shield-check"></i></h2>
+                <p>Segurança Institucional</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="carteira">
+            <div class="section-header">
+                <h2>Por que a <span class="gradient-text">BIWealth?</span></h2>
+                <p>Construída para investidores exigentes que buscam performance, segurança e inovação.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon"><i class="ph ph-bank"></i></div>
+                    <h3>Liquidez Profunda</h3>
+                    <p>Execute grandes ordens sem impacto no preço. Conectamos as maiores pools do mercado diretamente à
+                        sua conta.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon"><i class="ph ph-lock-key"></i></div>
+                    <h3>Custódia Fria</h3>
+                    <p>98% dos ativos ficam armazenados offline em cofres com segurança de nível militar e com
+                        multiplicidade de assinaturas.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon"><i class="ph ph-chart-line-up"></i></div>
+                    <h3>Ferramentas Pro</h3>
+                    <p>Gráficos avançados, tipos de ordem complexas e dados em tempo real para maximizar seus lucros e
+                        automatizar estratégias.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about" id="sobre">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="badge">Nossa Missão</div>
+                    <h2>Reescrevendo a História <br>do <span class="gradient-text">Sistema Financeiro</span></h2>
+                    <p>Fundada em 2024 por veteranos de Wall Street e pioneiros na tecnologia blockchain, a
+                        <strong>BIWealth</strong> nasceu com um propósito claro: democratizar o acesso a ativos digitais
+                        de forma segura, instintiva e transparente.
+                    </p>
+                    <p>Não somos apenas uma corretora. Somos a ponte institucional entre o capital tradicional e o
+                        futuro descentralizado. Construímos nossa infraestrutura do zero para garantir que cada
+                        milissegundo traga vantagem competitiva para nossos clientes.</p>
+
+                </div>
+                <div class="about-image glass-card">
+                    <div class="glow-effect"></div>
+
+                    <img src="../css/BICrypto.jpg" alt="BICrypto"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; position: relative; z-index: 1;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-hexagon"></i>
+                    BI<span class="gradient-text">Wealth</span>
+                </div>
+                <p>A plataforma definitiva para construir, gerenciar e proteger seu portfólio de criptomoedas.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Licenças</a></li>
+                    <li><a href="#">Avisos de Risco</a></li>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BIWealth Inc. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>
